@@ -1,5 +1,8 @@
+com\ecomm\CategoryTestCase.class
 com\ecomm\SupplierTest.class
-com\ecomm\AppTest.class
+com\ecomm\ProductTestCase.class
+com\ecomm\CategoryTest.class
+com\ecomm\UserTestCase.class
 com\ecomm\ProductTest.class
 com\ecomm\UserTest.class
-com\ecomm\CategoryTest.class
+com\ecomm\SupplierTestCase.class

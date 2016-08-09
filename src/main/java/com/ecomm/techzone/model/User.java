@@ -16,6 +16,7 @@ public class User {
 	private String mobile;
 	private String mail_id;
 	private String address;
+	private boolean admin;
 	
 	
 	@Id
@@ -55,6 +56,13 @@ public class User {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	public boolean getAdmin() {
+		return admin;
+	}
+	public void setAdmin(boolean admin) {
+		this.admin = admin;
+	}
+	
 	
 
 }

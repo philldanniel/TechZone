@@ -41,14 +41,14 @@ public class UserDAOImpl implements UserDAO {
 
 
 	@Transactional
-	public User get(String id) {
+	public User get(String name) {
 		//String hql = "from Category where id="+"'"+cat_id+"'";
 		
 	//	Query query = sessionFactory.getCurrentSession().createQuery(hql);
 	/*	Category cat =sessionFactory.getCurrentSession().get(Category.class, cat_id);
 		return cat; */
 		
-		String hql = "from Category where id=" + "'" + id + "'";
+		String hql = "from User where name=" + "'" + name + "'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		List<User> listUser = query.getResultList();
 		if (listUser != null && !listUser.isEmpty()) {
@@ -73,6 +73,22 @@ public class UserDAOImpl implements UserDAO {
 
 		sessionFactory.getCurrentSession().delete(userToDelete);
 		
+	}
+	
+	
+	
+	@Transactional
+	public boolean isValidUser(String name,String password) {
+		String hql = "from User where name='" + name + "' and password='"+ password +"'";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+		@SuppressWarnings("deprecation")
+		List listUser = query.list();
+		if (listUser != null && !listUser.isEmpty()) {
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 
 }
