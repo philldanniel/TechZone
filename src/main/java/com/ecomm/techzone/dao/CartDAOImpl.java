@@ -60,7 +60,12 @@ public class CartDAOImpl implements CartDAO {
 		return null;
 	}
 
-
+	@Transactional
+	public void save(Cart cart) {
+		
+		sessionFactory.getCurrentSession().save(cart);
+	}
+	 
 	@Transactional
 	public void saveOrUpdate(Cart cart) {
 		

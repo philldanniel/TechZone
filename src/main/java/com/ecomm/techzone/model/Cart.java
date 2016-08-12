@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Cart {
 	@Id
+	@GeneratedValue
 	private int id;
 	@Column(name="userid")
 	private String userId;
