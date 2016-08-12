@@ -2,10 +2,11 @@ package com.ecomm.techzone.model;
 
 import java.io.Serializable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -19,10 +20,16 @@ public class Product implements Serializable {
 	@Id
 	private String id;
 	private String name;
-	private String category_name;
 	private String description;
 	private int price;
+	private String category;
 	
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
 	@Transient
 	private MultipartFile image;
 	
@@ -47,12 +54,7 @@ public class Product implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getCategory_name() {
-		return category_name;
-	}
-	public void setCategory_name(String category_name) {
-		this.category_name = category_name;
-	}
+	
 	public String getDescription() {
 		return description;
 	}

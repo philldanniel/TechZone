@@ -1,8 +1,10 @@
 package com.ecomm.techzone.model;
 
-import javax.persistence.Column;
+
 import javax.persistence.Entity;
+
 import javax.persistence.Id;
+
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -11,12 +13,14 @@ import org.springframework.stereotype.Component;
 @Table
 @Component
 public class Category {
+	@Id
 	private String cat_id;
 	private String cat_name;
 	private String cat_details;
 	private String subcat_id;
+
 	
-	@Id
+	
 	public String getCat_id() {
 		return cat_id;
 	}

@@ -3,10 +3,13 @@ com\ecomm\techzone\dao\CategoryDAOImpl.class
 com\ecomm\techzone\dao\UserDAO.class
 com\ecomm\techzone\dao\ProductDAO.class
 com\ecomm\techzone\model\Category.class
+com\ecomm\techzone\dao\CartDAOImpl.class
+com\ecomm\techzone\dao\CartDAO.class
 com\ecomm\App.class
 com\ecomm\techzone\dao\SupplierDAOImpl.class
 com\ecomm\techzone\dao\UserDAOImpl.class
 com\ecomm\techzone\dao\ProductDAOImpl.class
+com\ecomm\techzone\model\Cart.class
 com\ecomm\techzone\model\User.class
 com\ecomm\techzone\dao\SupplierDAO.class
 com\ecomm\techzone\model\Supplier.class

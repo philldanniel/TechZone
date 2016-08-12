@@ -50,7 +50,7 @@ public class ProductDAOImpl implements ProductDAO {
 	/*	Category cat =sessionFactory.getCurrentSession().get(Category.class, cat_id);
 		return cat; */
 		
-		String hql = "from Category where id=" + "'" + id + "'";
+		String hql = "from Product where id=" + "'" + id + "'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		List<Product> listProduct = query.getResultList();
 		if (listProduct != null && !listProduct.isEmpty()) {

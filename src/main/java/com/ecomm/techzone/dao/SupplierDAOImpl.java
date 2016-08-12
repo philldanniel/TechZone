@@ -48,7 +48,7 @@ public class SupplierDAOImpl implements SupplierDAO {
 	/*	Category cat =sessionFactory.getCurrentSession().get(Category.class, cat_id);
 		return cat; */
 		
-		String hql = "from Category where sup_Id=" + "'" + sup_id + "'";
+		String hql = "from Supplier where sup_Id=" + "'" + sup_id + "'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		List<Supplier> listSupplier = query.getResultList();
 		if (listSupplier != null && !listSupplier.isEmpty()) {
