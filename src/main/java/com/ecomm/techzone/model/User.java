@@ -1,5 +1,7 @@
 package com.ecomm.techzone.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,14 +11,14 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table
 @Component
-public class User {
+public class User implements Serializable {
 	private String id;
 	private String name;
 	private String password;
 	private String mobile;
 	private String mail_id;
 	private String address;
-	private boolean admin;
+	
 	
 	
 	@Id
@@ -56,12 +58,7 @@ public class User {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public boolean getAdmin() {
-		return admin;
-	}
-	public void setAdmin(boolean admin) {
-		this.admin = admin;
-	}
+	
 	
 	
 

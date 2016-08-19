@@ -1,4 +1,4 @@
-package com.ecomm;
+/*package com.ecomm;
 
 import static org.junit.Assert.*;
 
@@ -39,3 +39,4 @@ public class SupplierTestCase {
 	}
 
 }
+*/

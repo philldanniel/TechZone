@@ -20,6 +20,7 @@ import com.ecomm.techzone.model.Category;
 import com.ecomm.techzone.model.Product;
 import com.ecomm.techzone.model.Supplier;
 import com.ecomm.techzone.model.User;
+import com.ecomm.techzone.model.UserRole;
 
 @Configuration
 @ComponentScan("com.ecomm.techzone")
@@ -54,6 +55,7 @@ public class ApplicationContextConfig{
 		sessionBuilder.addAnnotatedClass(Product.class);
 		sessionBuilder.addAnnotatedClass(User.class);
 		sessionBuilder.addAnnotatedClass(Cart.class);
+		sessionBuilder.addAnnotatedClass(UserRole.class);
 		return sessionBuilder.buildSessionFactory();
 	}
 	
