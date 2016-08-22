@@ -17,6 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.ecomm.techzone.model.Cart;
 import com.ecomm.techzone.model.Category;
+import com.ecomm.techzone.model.CheckoutDetails;
 import com.ecomm.techzone.model.Product;
 import com.ecomm.techzone.model.Supplier;
 import com.ecomm.techzone.model.User;
@@ -56,6 +57,7 @@ public class ApplicationContextConfig{
 		sessionBuilder.addAnnotatedClass(User.class);
 		sessionBuilder.addAnnotatedClass(Cart.class);
 		sessionBuilder.addAnnotatedClass(UserRole.class);
+		sessionBuilder.addAnnotatedClass(CheckoutDetails.class);
 		return sessionBuilder.buildSessionFactory();
 	}
 	
