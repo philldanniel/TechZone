@@ -1,4 +1,3 @@
-com\ecomm\techzone\dao\RoleDAO.class
 com\ecomm\techzone\dao\CategoryDAO.class
 com\ecomm\techzone\dao\UserDAO.class
 com\ecomm\techzone\dao\ProductDAO.class
@@ -6,16 +5,17 @@ com\ecomm\techzone\model\Category.class
 com\ecomm\techzone\dao\CartDAOImpl.class
 com\ecomm\techzone\dao\CartDAO.class
 com\ecomm\techzone\model\UserRole.class
-com\ecomm\techzone\dao\RoleDAOImpl.class
 com\ecomm\techzone\dao\SupplierDAOImpl.class
 com\ecomm\techzone\dao\ProductDAOImpl.class
 com\ecomm\techzone\model\Cart.class
+com\ecomm\techzone\dao\CheckoutDetailsDAOImpl.class
 com\ecomm\techzone\dao\SupplierDAO.class
 com\ecomm\techzone\model\Supplier.class
 com\ecomm\techzone\model\Product.class
 com\ecomm\techzone\config\ApplicationContextConfig.class
 com\ecomm\techzone\dao\CategoryDAOImpl.class
-com\ecomm\techzone\model\Role.class
+com\ecomm\techzone\dao\CheckoutDetailsDAO.class
+com\ecomm\techzone\model\CheckoutDetails.class
 com\ecomm\App.class
 com\ecomm\techzone\dao\UserRoleDAOImpl.class
 com\ecomm\techzone\dao\UserDAOImpl.class

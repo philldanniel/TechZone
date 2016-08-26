@@ -17,6 +17,8 @@ import com.ecomm.techzone.model.Cart;
 @Repository("cartDAO")
 public class CartDAOImpl implements CartDAO {
 	
+	
+	
 	@Autowired
 	private SessionFactory sessionFactory;
 	
