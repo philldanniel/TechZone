@@ -1,5 +1,7 @@
 package com.ecomm.techzone.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table(name="checkoutdetails")
 @Component
-public class CheckoutDetails {
+public class CheckoutDetails implements Serializable {
 	@Id
 	private String userid;
 	private String fullname;
